@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>CRUD APP</title>
+</head>
+
+  <body class="container">
+ 
+
+
+  <div  id="app"  class="jumbotron"> <!--holds the fields-->
+<h2>Employees</h2>
+<form id="form">
+<input type="text" id="name" name="name" placeholder="name" ><br>
+<br>
+<input type="text" id="job" name="job" placeholder="job"><br>
+<br>
+<input type="text" id="exp" name="exp" placeholder="exp"><br>
+<br>
+<input type="button" value="submit" id="btn"
+onclick="Submit();">
+ <input type="reset" value="clear-fields"><!--clears fields -->
+</div>
+</form>
+
+<!--where employees will polulate-->
+<br>
+  <fieldset>
+    
+      <h2>Employee list</h2>
+  
+
+    <table class="table table-bordered table-dark" id="table">
+   
+      <tr class="table-info">
+        <td class="col">Name</td>
+        <td class="col">Job</td>
+        <td class="col">Experience</td>
+        <td class="col">Edit/Delete</td>
+      </tr>
+    </table>
+  </fieldset>
+
+
+
+<!-- adding the jquery script -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="styles.css"></script>
+<script src="script.js"></script>  
+</body>
+</html>
